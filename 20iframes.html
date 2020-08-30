@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+
+        <h2>HTML Iframes</h2> <hr> <br>
+        <p>An HTML iframe is used to display a web page within a web page.</p> <br>
+        <h2>HTML Iframe Syntax</h2> <hr> <br>
+        <p>The HTML &lt;iframe> tag specifies an inline frame.
+
+            An inline frame is used to embed another document within the current HTML document.</p> <br>
+            <h3>Example</h3>
+          <p> <h4>Syntax</h4>
+            <pre class="example">
+              &lt;iframe src="url" title="description">&lt;/iframe>
+          </pre>
+          </p><br>
+          <p><strong>tips:</strong> It is a good practice to always include a title attribute for the &lt;iframe>. This is used by screen readers to read out what the content of the iframe is.
+        </p> <br>
+        <h2>Iframe - Set Height and Width</h2> <hr> <br>
+        <p>Use the <code>height</code> and <code>width</code> attributes to specify the size of the iframe.
+
+            The height and width are specified in pixels by default:</p>
+            <h3>Example</h3>
+          <p>
+            <pre class="example">
+              &lt;iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example">&lt;/iframe>
+          </pre>
+          </p><br>
+          <p>Or you can add the <code>style</code> attribute and use the CSS <code>height</code> and <code>width</code> properties:</p>
+          <h3>Example</h3>
+          <p>
+            <pre class="example">
+              &lt;iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example">&lt;/iframe>
+          </pre>
+          </p><br>
+          <h2>Iframe - Remove the Border</h2> <hr> <br>
+          <p>By default, an iframe has a border around it.
+
+            To remove the border, add the <code>style</code> attribute and use the CSS <code>border</code> property:</p>
+            <h3>Example</h3>
+          <p>
+            <pre class="example">
+              &lt;iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example">&lt;/iframe>
+          </pre>
+          </p><br>
+          <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+          <h3>Example</h3>
+          <p>
+            <pre class="example">
+              &lt;iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example">&lt;/iframe>
+          </pre>
+          </p><br>
+          <h2>Iframe - Target for a Link</h2> hr <br>
+          <p>An iframe can be used as the <code>target</code> frame for a link.
+
+            The target attribute of the link must refer to the <code>name</code> attribute of the iframe:</p>
+            <h3>Example</h3>
+          <p>
+            <pre class="example">
+                &lt;iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example">&lt;/iframe>
+
+                <p>&lt;a href="https://www.w3schools.com" target="iframe_a">W3Schools.com&lt;/a></p>
+          </pre>
+          </p><br>
+         <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="21Semantics.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="19forms.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

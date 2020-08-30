@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <h2>HTML Block and Inline Elements</h2><br>
+        <p>Every HTML element has a default display value, depending on what type of element it is.</p>
+        <p>There are two display values: block and inline.</p>
+        <h3>Block-level Elements</h3>
+        <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+        <p style="border: mediumseagreen solid;">The &lt;div> element is a block-level element.</p>
+        <br><h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;div>Hello World&lt;/div>
+        </pre></p><br>
+        <p><strong>Here are the block-level elements in HTML:</strong></p>
+        <p><pre>&lt;address>   &lt;article>   &lt;aside>    &lt;blockquote></pre></p>
+        <p><pre>&lt;dt>        &lt;fieldset>  &lt;fieldset> &lt;figure></pre></p>
+        <p><pre>&lt;hr>        &lt;li>        &lt;main>     &lt;nav></pre></p>
+        <p><pre>&lt;section>   &lt;table>    &lt;tfoot>     &lt;ul></pre></p>
+        <h3>Inline Elements</h3>
+        <p>An inline element does not start on a new line and it only takes up as much width as necessary.</p>
+        <div style="display: flex;">
+            <p>This is</p>
+            <div style="border: mediumspringgreen solid 2px; margin: 5px 7px ;">a &lt;span> element inside</div>
+            <p> a paragraph.</p>
+        </div>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;span>Helllo World&lt;/span>
+        </pre></p>
+        <p><strong>Here are the inline elements in HTML:</strong></p>
+        <p><pre>&lt;a>        &lt;abbr>    &lt;acronym>    &lt;b></pre></p>
+        <p><pre>&lt;cite>     &lt;code>    &lt;dfn>        &lt;em></pre></p>
+        <p><pre>&lt;label>    &lt;map>     &lt;object>     &lt;output></pre></p>
+        <p><pre>&lt;small>    &lt;span>    &lt;strong>     &lt;sub></pre></p>
+        <h3>The <code>&lt;div></code> Element</h3>
+        <p>The <code>&lt;div></code> element is often used as a container for other HTML elements.</p>
+        <p>The <code>&lt;div></code> element has no required attributes, but <code>style</code>, <code>class</code> and <code>id</code> are common.</p>
+        <p>When used together with CSS, the <code>&lt;div></code> element can be used to style blocks of content:</p>
+        <h4>Example</h4>
+        <p><pre class="example" style="font-size: 14px;">
+            
+        &lt;div style="background-color:black;color:white;padding:20px;">
+            &lt;h2>London&lt;/h2>
+            &lt;p>London is the capital city of England. It is the most....&lt;/p>
+        &lt;/div>
+        </pre></p><br>
+        <h3>The &lt;span> Element</h3>
+        <p>The <code>&lt;span></code> element is often used as a container for other HTML elements.</p>
+        <p>The <code>&lt;span></code> element has no required attributes, but <code>style</code>, <code>class</code> and <code>id</code> are common.</p>
+        <p>When used together with CSS, the <code>&lt;span></code> element can be used to style blocks of content:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+        &lt;p>My mother has &lt;span style="color:blue;font-weight:bold">blue
+        &lt;/span> eyes and my father has &lt;span style="color:darkolivegreen;
+        font-weight:bold">dark green&lt;/span> eyes.&lt;/p>
+        </pre></p><br>
+         <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="10css.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="8styles.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

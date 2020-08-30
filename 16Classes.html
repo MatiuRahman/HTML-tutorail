@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp; &nbsp;</h1>
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn">
+        <h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <p>
+          The HTML <code>class</code> attribute is used to specify a class for an HTML element. <br>
+
+          Multiple HTML elements can share the same class.
+        </p> <br>
+        <h2>Using The class Attribute</h2>
+        <hr> <br>
+        <p>
+          The <code>class</code> attribute is often used to point to a class name in a style sheet.
+          It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+
+          In the following example we have three <code>&ltdiv></code> elements with a class attribute with the value of
+          "city".
+          All of the three <code>&ltdiv></code> elements will be styled equally according to the <code>.city</code>
+          style definition in the head section:
+        </p> <br>
+        <h3>Example</h3>
+        <p>
+          <pre class="example">
+
+          &lt!DOCTYPE html>
+          &lthtml>
+          &lthead>
+          &ltstyle>
+          .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+          }
+          &lt/style>
+          &lt/head>
+          &ltbody>
+          
+          &ltdiv class="city">
+          &lth2>London</h2>
+            &lt;p>London is the capital of England.&lt;/p>
+            &lt;/div>
+          
+            &lt;div class="city">
+            &lt;h2>Paris&lt;/h2>
+            &lt;p>Paris is the capital of France.&lt;/p>
+            &lt;/div>
+          
+            &lt;div class="city">
+            &lt;h2>Tokyo&lt;/h2>
+            &lt;p>Tokyo is the capital of Japan.&lt;/p>
+            &lt;/div>
+          
+            &lt;/body>
+            &lt;/html>
+        </pre>
+        </p>
+        <p>In the following example we have two &lt;span> elements with a <code>class</code> attribute with the value of
+          "note".
+          Both &ltspan> elements will be styled equally according to the <code>.note</code> style definition in the head
+          section:</p>
+        <br>
+        <p>
+          <h3>Note:</h3> The class name is case sensitive. The class attribute can be use on any
+          <strong>HTML</strong>element.
+        </p> <br>
+        <h2>The sytex for class</h2>
+        <hr> <br>
+        <p>To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties
+          within curly braces {}:</p> <br>
+        <h3>Example</h3>
+        <p>Create a class named "city":
+          <pre class="example">
+          &lt;!DOCTYPE html>
+          &lt;html>
+          &lt;head>
+          &lt;style>
+          .city {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+          }
+          &lt;/style>
+          &lt;/head>
+          &lt;body>
+          
+          &lt;h2 class="city">London&lt;/h2>
+          &lt;p>London is the capital of England.&lt;/p>
+          
+          &lt;h2 class="city">Paris&lt;/h2>
+          &lt;p>Paris is the capital of France.&lt;/p>
+          
+          &lt;&lt;h2 class="city">Tokyo</h2>
+          &lt;&lt;p>Tokyo is the capital of Japan.</p>
+          
+          &lt;/body>
+          &lt;/html>
+        </pre>
+        </p> <br>
+
+        <h2>Multiple Classes</h2> <hr> <br>
+        <p>
+          HTML elements can belong to more than one <code>class</code>.
+
+          To define multiple classes, separate the class names with a space, e.g. &lt;div class="city main">. The
+          element will be styled according to all the classes specified.
+
+          In the following example, the first &lt;h2> element belongs to both the <code>city</code> class and also to
+          the <code>main class</code>, and will get the CSS styles from both of the classes:
+        </p> <br>
+        <h3>Example</h3>
+        <p>
+          <pre class="example">
+          &lt;h2 class="city main">London&lt/h2>
+          &lt;h2 class="city">Paris&lt;/h2>
+          &lt;h2 class="city">Tokyo&lt;/h2>
+        </pre>
+        </p><br>
+        <h2>Different Elements can share same class</h2> <hr> <br>
+        <p></p>Different HTML elements can point to the same class name.
+        In the following example, both &lt;h2> and &lt;p> points to the "city" class and will share the same style:</p>
+        <h3>Example</h3>
+          <p>
+            <pre class="example">
+              &lt;h2 class="city">Paris&lt;/h2>
+              &lt;p class="city">Paris is the capital of France&lt;/p>
+          </pre>
+          </p><br>
+        <h2>Use of The class Attribute in JavaScript</h2> <hr> <br>
+        <p>The class name can also be used by JavaScript to perform certain tasks for specific elements.
+
+          JavaScript can access elements with a specific class name with the <code>getElementsByClassName()</code> method:</p> <br>
+          <h3>Example</h3>
+        <p> Click on a button to hide all elements with the class name "city":
+          <pre class="example">
+          &lt;script>
+            function myFunction() {
+              var x = document.getElementsByClassName("city");
+              for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+            }
+            &lt;/script>
+        </pre>
+        </p><br>
+        <br>
+        <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="17head.html"><button class="button"
+                style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="15attributes.html"><button class="button"
+                style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

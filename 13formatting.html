@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <h2>HTML Text Formatting</h2><br>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            <p><b>This text is bold</b></p>
+            <p><i>This text is italic</i></p>
+            <p>This is <sub>subscript</sub>and <sup>superscript</sup></p>
+        </pre></p><br>
+        <h3>HTML Formatting Elements</h3>
+        <p>Formatting elements were designed to display special types of text:</p>
+        <ul style="padding-left: 25px;">
+            <li><code>&lt;b></code> - Bold text</li>
+            <li><code>&lt;strong></code> - Important text</li>
+            <li><code>&lt;i></code> - Italic text</li>
+            <li><code>&lt;em></code> - Emphasized text</li>
+            <li><code>&lt;mark></code> - Marked text</li>
+            <li><code>&lt;small></code> - Smaller text</li>
+            <li><code>&lt;del></code> - Deleted text</li>
+            <li><code>&lt;ins></code> - Inserted text</li>
+            <li><code>&lt;sub></code> - Subscript text</li>
+            <li><code>&lt;sup></code> - Superscript text</li>
+        </ul><br>
+        <h3>HTML &lt;b> and &lt;strong> Elements</h3>
+        <p>The HTML <code>&lt;b></code> element defines bold text, without any extra importance.</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;b>This text is bold&lt;/b>
+        </pre></p> <br>
+        <p>The HTML <code>&lt;strong></code> element defines text with strong importance. The content inside is typically displayed in bold.</p>
+        <p><pre class="example">
+            
+            &lt;strong>This text is important!&lt;/b>
+        </pre></p> <br>
+        <h3>HTML &lt;i> and &lt;em> Elements</h3>
+        <p>The HTML <code>&lt;i></code> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;i>This text is italic&lt;/i>
+        </pre></p> <br>
+        <p>The HTML <code>&lt;em></code> element defines emphasized text. The content inside is typically displayed in italic.</p>
+        <p><pre class="example">
+            
+            &lt;em>This text is emphasized!&lt;/em>
+        </pre></p> <br>
+        <h3>HTML &lt;small> Element</h3>
+        <p>The HTML <code>&lt;small></code> element defines smaller text:</p>
+        <p><pre class="example">
+            
+            &lt;small>This is some smaller text.&lt;/small>
+        </pre></p><br>
+    </pre></p> <br>
+    <h3>HTML &lt;mark> Element</h3>
+    <p>The HTML <code>&lt;mark></code> element defines text that should be marked or highlighted:</p>
+    <p><pre class="example">
+        
+        &lt;p>Do not forget to buy &lt;mark>milk&lt;/mark> today.&lt;/p>
+    </pre></p><br>
+    <h3>HTML &lt;del> Element</h3>
+    <p>The HTML <code>&lt;del></code> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:</p>
+    <p><pre class="example">
+        
+        &lt;p>My favorite color is &lt;del>blue&lt;/del> red.&lt;/p>
+    </pre></p><br>
+    <h3>HTML &lt;ins> Element</h3>
+    <p>The HTML <code>&lt;ins></code> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:</p>
+    <p><pre class="example">
+        
+        &lt;p>My favorite color is *&lt;del>blue&lt;/del> &lt;ins>red&lt;/ins>.&lt;/p>
+    </pre></p><br>
+    <h3>HTML &lt;sub> Element</h3>
+    <p>The HTML <code>&lt;sub></code>  element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H <sub>2</sub> O:</p>
+    <p><pre class="example">
+        
+        &lt;p>This is &lt;sub>subscripted&lt;/sub> text.&lt;/p>
+    </pre></p><br>
+    <h3>HTML &lt;sup> Element</h3>
+    <p>The HTML <code>&lt;sup></code>  element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW <sup>[1]</sup>:</p>
+    <p><pre class="example">
+        
+        &lt;p>This is &lt;sup>supscripted&lt;/sup> text.&lt;/p>
+    </pre></p><br>
+        <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="14tables.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="12comments.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <h2>HTML Paragraphs</h2>
+        <br>
+        <h3>HTML Paragraphs</h3>
+        <p>The HTML &lt;p> element defines a paragraph.</p>
+        <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;p>This is a paragraph.lt;/p>
+            &lt;p>This is another paragraph.&lt;/p>
+        </pre></p><br>
+        <h3>HTML Display</h3>
+        <p>You cannot be sure how HTML will be displayed.
+
+            Large or small screens, and resized windows will create different results.
+            
+            With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+            
+            The browser will automatically remove any extra spaces and lines when the page is displayed:
+        </p>
+        <h4>Example</h4>
+        <p><pre class="example">
+                
+                &lt;p>
+                This paragraph
+                contains a lot of lines
+                in the source code,
+                but the browser
+                ignores it.
+                &lt;/p>
+                
+                &lt;p>
+                This paragraph
+                contains         a lot of spaces
+                in the source         code,
+                but the        browser
+                ignores it.
+                &lt;/p>
+        </pre></p><br>
+        <h3>HTML Horizontal Rules</h3>
+        <p>The <code>&lt;hr></code> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+        <p>The <code>&lt;hr></code> element is used to separate content (or define a change) in an HTML page:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;h1>This is heading 1&lt;/h1>
+            &lt;p>This is some text.&lt;/p>
+            &lt;hr>
+            &lt;h2>This is heading 2&lt;/h2>
+            &lt;p>This is some other text.&lt;/p>
+            &lt;hr>
+        </pre></p><br>
+        <h3>HTML Line Breaks</h3>
+        <p>The HTML <code>&lt;br></code> element defines a line break.</p>
+        <p>Use <code>&lt;br></code> if you want a line break (a new line) without starting a new paragraph:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;p>This is&lt;br>a paragraph&lt;br>with line breaks.&lt;/p>
+        </pre></p><br>
+        <p>The <code>&lt;br></code> tag is an empty tag, which means that it has no end tag.</p>
+         <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="8styles.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="6images.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

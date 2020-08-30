@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <h2>HTML - The Head Element</h2> <hr> <br>
+        <p>
+          The HTML &lt;head> element is a container for the following elements: &lt;title>, &lt;style>, &lt;meta>, &lt;link>, &lt;script>, and &lt;base>.
+        </p> <br>
+        <h2>The HTML &lt;head> Element</h2> <hr> <br>
+        <p>
+          The &lt;head> element is a container for metadata (data about data) and is placed between the &lt;html> tag and the &lt;body> tag.
+
+            HTML metadata is data about the HTML document. Metadata is not displayed.
+            
+            Metadata typically define the document title, character set, styles, scripts, and other meta information.
+        </p> <br>
+        <h2>The HTML &lt;title> Element</h2> <hr> <br>
+        <p>
+          The &lt;title> element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.
+
+            The &lt;title> tag is required in HTML documents!
+            
+            The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.
+        </p> <br>
+        <p>
+          The &lt;title> element:
+          <ul style="padding-left: 5%;">
+            <li>defines a title in the browser toolbar.</li>
+            <li>provides a title for the page when it is added to favorites.</li>
+            <li>displays a title for the page in search engine-results.</li>
+          </ul>
+          So, try to make the title as accurate and meaningful as possible! <br>
+          A simple HTML document:
+        </p>
+        <h3>Example</h3>
+        <p>
+          <pre class="example">
+            &lt;!DOCTYPE html>
+            &lt;html>
+            &lt;head>
+              &lt;title>A Meaningful Page Title</title>
+            &lt;/head>
+            &lt;body>
+
+            The content of the document......
+
+            &lt;/body>
+            &lt;/html>
+        </pre>
+        </p><br>
+        <h2>The HTML &lt;style> Element</h2> <hr>  <br>
+        <p>The &lt;style> element is used to define style information for a single HTML page:</p>
+        <h3>Example</h3>
+        <p>
+          <pre class="example">
+            &lt;style>
+              body {background-color: powderblue;}
+              h1 {color: red;}
+              p {color: blue;}
+            &lt;/style>
+        </pre>
+        </p><br>
+        <h2>The HTML &lt;link> Element</h2> <hr> <br>
+        <p>The &lt;link> element defines the relationship between the current document and an external resource.
+
+          The &lt;link> tag is most often used to link to external style sheets:</p>
+          <h3>Example</h3>
+          <p>
+            <pre class="example">
+              &lt;link rel="stylesheet" href="mystyle.css">
+          </pre>
+          </p><br>
+          <h2>The HTML &lt;meta> Element</h2> <hr> <br>
+          <p>The &lt;meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+
+            The metadata will not be displayed on the page, but are used by browsers (how to display content or reload page), by search engines (keywords), and other web services.</p>
+            <h3>Example</h3>
+          <p> <strong>Define the character set used:</strong>
+            <pre class="example">
+              &lt;meta charset="UTF-8">
+          </pre>
+          </p><br>
+          <p><strong>Define keywords for search engines:</strong>
+            <pre class="example">
+              &lt;meta name="keywords" content="HTML, CSS, JavaScript">
+          </pre>
+          </p><br>
+          <p><strong>Define a description of your web page:</strong>
+            <pre class="example">
+              &lt;meta name="description" content="Free Web tutorials">
+          </pre>
+          </p><br>
+          <p><strong>Define the author of a page:</strong>
+            <pre class="example">
+              &lt;meta name="author" content="John Doe">
+          </pre>
+          </p><br>
+          <p><strong>Refresh document every 30 seconds:</strong>
+            <pre class="example">
+              &lt;meta http-equiv="refresh" content="30">
+          </pre>
+          </p><br>
+          <p><strong>Setting the viewport to make your website look good on all devices:</strong>
+            <pre class="example">
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+          </pre>
+          </p><br>
+          <p>Example of <code>&lt;meta></code> tags:</p> <br>
+          <h3>Example</h3>
+          <p>
+            <pre class="example">
+              &lt;meta charset="UTF-8">
+&lt;meta name="description" content="Free Web tutorials">
+&lt;meta name="keywords" content="HTML, CSS, JavaScript">
+&lt;meta name="author" content="John Doe">
+          </pre>
+          </p><br>
+          <h2>Setting The Viewport</h2> <hr> <br>
+          <p>The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+
+            You should include the following <code>&lt;meta></code> element in all your web pages:</p>
+            <p>
+              <pre class="example">
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+            </pre>
+            </p><br>
+            <p>
+              This gives the browser instructions on how to control the page's dimensions and scaling.
+
+The <code>width=device-width</code>  part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The <code>initial-scale=1.0</code> part sets the initial zoom level when the page is first loaded by the browser.
+
+Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:
+            </p> <br>
+            <h2>The HTML &lt;script> Element</h2> <hr> <br>
+            <p>The &lt;script> element is used to define client-side JavaScripts.
+
+              The following JavaScript writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+              <h3>Example</h3>
+              <p>
+                <pre class="example">
+                  &lt;script>
+                    function myFunction() {
+                      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                    }
+                    &lt;/script>
+              </pre>
+              </p><br>
+              <h2>The HTML &lt;base> Element</h2> <hr> <br>
+              <p>
+                The &lt;base> element specifies the base URL and/or target for all relative URLs in a page.
+
+The &lt;base> tag must have either an href or a target attribute present, or both.
+
+There can only be one single &lt;base> element in a document!
+              </p>
+              <h3>Example</h3>
+              <p>Specify a default URL and a default target for all links on a page:
+                <pre class="example">
+                  &lt;head>
+                    &lt;base href="https://www.w3schools.com/" target="_blank">
+                    &lt;/head>
+                    
+                    &lt;body>
+                    &lt;img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+                    &lt;a href="tags/tag_base.asp">HTML base Tag</a>
+                    &lt;/body>
+              </pre>
+              </p><br>
+         <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="18Ids.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="16Classes.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

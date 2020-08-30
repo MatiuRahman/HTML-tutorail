@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <h2>What Are HTML Tags?</h2> <hr> <br>
+        <p>Tags are the basis of HTML.</p>
+        <p>
+           Tags are used to mark up the start of an HTML element and they are usually enclosed in angle brackets. 
+           An example of a tag is: <code>&lt;h1></code>.
+        </p>
+        <p>Most tags must be open <code>&lt;h1></code> and close <code>&lt;/h1></code> in order to function.</p> <br>
+        <h2>HTML Elements</h2> <hr> <br>
+        <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+        <p><code>&lt;tagname></code>Content goes here... <code>&lt;/tagname></code></p>
+        <p>The HTML element is everything from the start tag to the end tag:</p>
+        <p><code>&lt;h1></code>My First Heading <code>&lt;/h1></code></p>
+        <p><code>&lt;p></code>My first paragraph. <code>&lt;/p></code></p>
+        <br>
+        <table>
+            <tr>
+                <th>Start tag</th>
+                <th>Element content</th>
+                <th>End tag</th>
+            </tr>
+            <tr>
+                <td><strong>&lt;h1></strong></td>
+                <td>My First Heading</td>
+                <td><strong>&lt;/h1></strong></td>
+            </tr>
+            <tr>
+                <td><strong>&lt;p></strong></td>
+                <td>My first paragraph.</td>
+                <td><strong>&lt;/p></strong></td>
+            </tr>
+            <tr>
+                <td><strong>&lt;br></strong></td>
+                <td>none</td>
+                <td>none</td>
+            </tr>
+        </table>
+        <br>
+        <h2>Nested HTML Elements</h2> <hr> <br>
+        <p>
+            HTML elements can be nested (this means that elements can contain other elements).
+            All HTML documents consist of nested HTML elements.
+        </p>
+        <p>The following example contains four HTML elements( <code>&lt;html></code>, <code>&lt;body></code>, <code>&lt;h1></code> and <code>&lt;p></code>):</p>
+        <br>
+          <h3 >Example</h3>
+          <p><pre class="example">
+              
+                  &lt;!DOCTYPE html>
+                  &lt;html>
+                  &lt;body>
+
+                  &lt;h1>My First Heading&lt;/h1>
+                  &lt;p>My first paragraph.&lt;/p>
+
+                  &lt;/body>
+                  &lt;/html>
+          </pre></p> <br>
+        <h3>Example Explained</h3>
+        <p>The <code>&lt;html></code> element is the root element and it defines the whole HTML document.</p>
+        <p>It has a start tag <code>&lt;html></code> and an end tag <code>&lt;/html></code>.</p>
+        <p>Then, inside the <code>&lt;html></code> element there is a <code>&lt;body></code> element:</p>
+        <br>
+        <p><pre class="example">
+            
+            &lt;body>
+
+                &lt;h1>My First Heading&lt;/h1>
+                &lt;p>My first paragraph.&lt;/p>
+                
+            &lt;/body>
+        </pre></p>
+        <br>
+        <p>The <code>&lt;body></code> element defines the document's body.</p>
+        <p>It has a start tag <code>&lt;body></code> and an end tag <code>&lt;/body></code>.</p>
+        <p>Then, inside the <code>&lt;body></code> element there is two other elements: <code>&lt;h1></code> and <code>&lt;p></code>:</p>
+        <br>
+        <p><pre class="example">
+            
+                &lt;h1>My First Heading&lt;/h1>
+                &lt;p>My first paragraph.&lt;/p>
+        </pre></p>
+        <br>
+        <p><strong>The <code>&lt;h1></code> element defines a heading.</strong></p>
+        <p><strong>It has a start tag <code>&lt;h1></code> and an end tag <code>&lt;/h1></code>:</strong></p>
+        <br>
+        <p><pre class="example">
+
+                &lt;h1>My First Heading&lt;/h1>
+        </pre></p>
+        <br>
+        <p><strong>The <code>&lt;p></code> element defines a paragraph.</strong></p>
+        <p><strong>It has a start tag <code>&lt;p></code> and an end tag <code>&lt;/p></code>:</strong></p>
+        <br>
+        <p><pre class="example">
+
+                &lt;p>My first paragraph.&lt;/p>
+        </pre></p>
+         <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="3.1headings.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="index.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

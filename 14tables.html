@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <h2>HTML Tables</h2><br>
+        <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            <table class="table">
+                <tr>
+                    <th><strong>Company</strong></th>
+                    <th><strong>Contact</strong></th>
+                    <th><strong>Country</strong></th>
+                </tr>
+                <tr>
+                    <td>Nike</td>
+                    <td>Maria Anders</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td>Adidas</td>
+                    <td>Roland Mendel</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Alibaba</td>
+                    <td>Helen Bennett</td>
+                    <td>China</td>
+                </tr>
+                <tr>
+                    <td>Samsung</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>South Korea</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+            </table>
+        </pre></p><br>
+        <h3>Define an HTML Table</h3>
+        <p>The <code>&lt;table></code> tag defines an HTML table.</p>
+        <p>Each table row is defined with a <code>&lt;tr></code> tag. Each table header is defined with a <code>&lt;th></code> tag. Each table data/cell is defined with a <code>&lt;td></code> tag.</p>
+        <p>By default, the text in <code>&lt;th></code> elements are bold and centered.</p>
+        <p>By default, the text in <code>&lt;td></code> elements are regular and left-aligned.</p>
+        <h4>Example</h4>
+        <p>A simple HTML table:</p>
+        <p><pre class="example">
+            
+            &lt;table style="width:100%">
+                &lt;tr>
+                    &lt;th>Firstname&lt;/th>
+                    &lt;th>Lastname&lt;/th>
+                    &lt;th>Age&lt;/th>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Jill&lt;/td>
+                    &lt;td>Smith&lt;/td>
+                    &lt;td>50&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Eve&lt;/td>
+                    &lt;td>Jackson&lt;/td>
+                    &lt;td>94&lt;/td>
+                &lt;/tr>
+              &lt;/table>
+        </pre></p><br>
+        <h3>HTML Table - Add a Border</h3>
+        <p>To add a border to a table, use the CSS <code>border</code> property:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            table, th, td {
+                border: 1px solid black;
+              }
+        </pre></p><br>
+        <h3>HTML Table - Collapsed Borders</h3>
+        <p>To let the borders collapse into one border, add the CSS <code>border-collapse</code> property:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+              }
+        </pre></p><br>
+        <h3>HTML Table - Add Cell Padding</h3>
+        <p>Cell padding specifies the space between the cell content and its borders.</p>
+        <p>If you do not specify a padding, the table cells will be displayed without padding.</p>
+        <p>To set the padding, use the CSS <code>padding</code> property:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            th, td {
+                padding: 15px;
+              }
+        </pre></p><br>
+        <h3>HTML Table - Left-align Headings</h3>
+        <p>By default, table headings are bold and centered.</p>
+        <p>To left-align the table headings, use the CSS <code>text-align</code> property:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            th {
+                text-align: left;
+              }
+        </pre></p><br>
+        <h3>HTML Table - Add Border Spacing</h3>
+        <p>Border spacing specifies the space between the cells.</p>
+        <p>To set the border spacing for a table, use the CSS <code>border-spacing</code> property:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            table {
+                border-spacing: 5px;
+              }
+        </pre></p><br>
+        <h3>HTML Table - Cell that Span Many Columns</h3>
+        <p>To make a cell span more than one column, use the <code>colspan</code> attribute:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;table style="width:100%">
+                &lt;tr>
+                    &lt;th>Name&lt;/th>
+                    &lt;th colspan="2">Telephone&lt;/th>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Bill Gates&lt;/td>
+                    &lt;td>5557785&lt;/td>
+                    &lt;td>5557789&lt;/td>
+                &lt;/tr>
+              &lt;/table>
+        </pre></p><br>
+        <h3>HTML Table - Cell that Span Many Rows</h3>
+        <p>To make a cell span more than one column, use the <code>rowspan</code> attribute:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;table style="width:100%">
+                &lt;tr>
+                    &lt;th>Name&lt;/th>
+                    &lt;td>Bill Gates&lt;td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;th rowspan="2">Telephone&lt;/td>
+                    &lt;td>5557785&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>5557789&lt;/td>
+                &lt;/tr>
+              &lt;/table>
+        </pre></p><br>
+        <h3>HTML Table - Add a Caption</h3>
+        <p>To add a caption to a table, use the <code>&lt;caption></code> tag:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;table style="width:100%">
+                &lt;caption>Monthly savings&lt;/caption>
+                &lt;tr>
+                    &lt;th>Month&lt;/th>
+                    &lt;th>Savings&lt;td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>January&lt;/td>
+                    &lt;td>100$&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>February&lt;/td>
+                    &lt;td>50$&lt;/td>
+                &lt;/tr>
+              &lt;/table>
+        </pre></p><br>
+        <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="15attributes.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="13formatting.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

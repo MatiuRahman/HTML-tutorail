@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+
+        <h2>HTML Semantic Elements</h2> <hr> <br>
+        <h5>Semantic elements = elements with a meaning.</h5> <br>
+        <h2>What are Semantic Elements?</h2> <hr> <br>
+        <p>A semantic element clearly describes its meaning to both the browser and the developer.
+
+            Examples of non-semantic elements: <code>&lt;div></code> and <code>&lt;span></code> - Tells nothing about its content.
+            
+            Examples of semantic elements: <code>&lt;form></code>, <code>&lt;table></code>, and <code>&lt;article></code> - Clearly defines its content.</p>
+            <br>
+            <h2>Semantic Elements in HTML</h2> <hr> <br>
+           <p> Many web sites contain HTML code like: <code>&lt;div id="nav"></code> <code>&lt;div class="header"></code> <code>&lt;div id="footer"></code> to indicate navigation, header, and footer.
+
+                In HTML there are some semantic elements that can be used to define different parts of a web page:  </p>
+                <table>
+                    <tr><td>
+
+                
+            <ul style="padding-left: 5%;">
+                <li><code>&lt;article></code></li>
+                <li><code>&lt;details></code></li>
+                <li><code>&lt;aside></code></li>
+                <li><code>&lt;figcaption></code></li>
+                <li><code>&lt;figure></code></li>
+                <li><code>&lt;footer></code></li>
+                <li><code>&lt;header></code></li>
+                <li><code>&lt;main></code></li>
+                <li><code>&lt;mark></code></li>
+                <li><code>&lt;nav></code></li>
+                <li><code>&lt;section></code></li>
+                <li><code>&lt;summary></code></li>
+                <li><code>&lt;time></code></li>
+            </ul>
+        </td>
+        <td>
+            <img alt="HTML Semantic Elements" src="Layout_img.gif" width="219" height="258">
+        </td>
+    </tr>
+    </table>
+    <h2>HTML &lt;section> Element</h2> <hr> <br>
+    <p>
+        The <code>&lt;section></code> element defines a section in a document.
+
+            According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
+            
+            A web page could normally be split into sections for introduction, content, and contact information.
+    </p>
+    <h3>Example</h3>
+    <p> Two sections in a document code:
+      <pre class="example">
+        &lt;section>
+     &lt;h1>WWF&lt;/h1>
+    &lt;p>The World Wide Fund for Nature (WWF) is an international 
+     organization working on issues regarding the conservation, research
+     and restoration of the environment, formerly named the World Wildlife
+     Fund. WWF was founded in 1961.&lt;/p>
+    &lt;/section>
+            
+    &lt;section>
+    &lt;h1>WWF's Panda symbol&lt;/h1>
+    &lt;p>The Panda has become the symbol of WWF. 
+    The well-known panda logo of WWF originated from a panda 
+    named Chi Chi that was transferred from the Beijing Zoo to
+    the London Zoo in the same year of the establishment of WWF.&lt;/p>
+     &lt;/section>
+    </pre>
+    </p><br>
+    <h2>HTML &lt;article> Element</h2> <hr> <br>
+    The <code>&lt;article></code> element specifies independent, self-contained content.
+
+        An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
+        
+        Examples of where an <code>&lt;article></code> element can be used:
+        <ul style="padding-left: 5%;">
+            <li>Form Post</li>
+        <li>Blog Post</li>
+        <li>Newspaper Article</li>
+        </ul>
+        <h3>Example</h3>
+          <p>Three articles with independent, self-contained content:
+            <pre class="example">
+              &lt;article>
+              &lt;h2>Google Chrome&lt;/h2>
+              &lt;p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt;/p>
+              &lt;/article>
+                
+              &lt;article>
+              &lt;h2>Mozilla Firefox&lt;/h2>
+              &lt;p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.&lt;/p>
+              &lt;/article>
+                
+              &lt;article>
+              &lt;h2>Microsoft Edge&lt;/h2>
+              &lt;p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.&lt;/p>
+              &lt;/article>
+          </pre>
+          </p><br>
+          <h3>Example 2</h3>
+          <p>Use CSS to style the &lt;article> element:
+            <pre class="example">
+                &lt;html>
+                &lt;head>
+                &lt;style>
+                    .all-browsers {
+                      margin: 0;
+                      padding: 5px;
+                      background-color: lightgray;
+                    }
+                    
+                    .all-browsers > h1, .browser {
+                      margin: 10px;
+                      padding: 5px;
+                    }
+                    
+                    .browser {
+                      background: white;
+                    }
+                    
+                    .browser > h2, p {
+                      margin: 4px;
+                      font-size: 90%;
+                    }
+                    &lt;/style>
+                    &lt;/head>
+                    &lt;body>
+                    
+                    &lt;article class="all-browsers">
+                    &lt;h1>Most Popular Browsers&lt;/h1>
+                    &lt;article class="browser">
+                    &lt;h2>Google Chrome&lt;/h2>
+ &lt;p>Google Chrome is a web browser developed by Google, released in 2008. 
+    Chrome is the world's most popular web browser today!&lt;/p>
+                      &lt;/article>
+                      &lt;article class="browser">
+                      &lt;h2>Mozilla Firefox&lt;/h2>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla.
+  Firefox has been the second most popular web browser since January, 2018.&lt;/p>
+                             &lt;/article>
+                             &lt;article class="browser">
+                             &lt;h2>Microsoft Edge&lt;/h2>
+     &lt;p>Microsoft Edge is a web browser developed by Microsoft, 
+ released in 2015. Microsoft Edge replaced Internet Explorer.&lt;/p>
+                            &lt;/article>
+                            &lt;/article>
+                    
+                            &lt;/body>
+                            &lt;/html>&lt;
+          </pre>
+            </p><br>
+            <h2>Nesting &lt;article> in &lt;section> or Vice Versa?</h2> <hr> <br>
+                <p>The &lt;article> element specifies independent, self-contained content.
+
+                    The <code>&lt;section></code> element defines section in a document.
+                    
+                    Can we use the definitions to decide how to nest those elements? No, we cannot!
+                    
+                    So, you will find HTML pages with &lt;section> elements containing <code>&lt;article></code> elements, 
+                        and <code>&lt;article></code> elements containing <code>&lt;section></code> elements.</p>
+                        <h2>HTML &lt;header> Element</h2> <hr> <br>
+                        <p>
+                            The <code>&lt;header></code> element represents a container for introductory content or a set of navigational links.
+
+                                A <code>&lt;header></code> element typically contains:
+                                <ul style="padding-left: 5%;">
+                                    <li>one or more heading elements (&lt;h1> - &lt;h6>)</li>
+                                    <li>logo or icon</li>
+                                    <li>authorship information</li>
+                                </ul>
+                        </p>
+                        <p><strong>Note:</strong>You can have several <code>&lt;header></code> elements in one HTML document. However, <code>&lt;header></code> cannot be placed within a <code>&lt;footer></code>, <code>&lt;address></code> or another <code>&lt;header></code> element</p>
+                        <br>
+                        <h3>Example</h3>
+          <p>A header for an &lt;article>: 
+            <pre class="example">
+    &lt;article>
+    &lt;header>
+    &lt;h1>What Does WWF Do?&lt;/h1>
+    &lt;p>WWF's mission:&lt;/p>
+    &lt;/header>
+    &lt;p>WWF's mission is to stop the degradation of our 
+    planet's natural environment,and build a future in 
+    which humans live in harmony with nature.&lt;/p>
+    &lt;/article>
+          </pre>
+          </p><br>
+          <h2>HTML &lt;footer> Element</h2>
+            <p>The <code>&lt;footer></code> element defines a footer for a document or section.
+
+                A <code>&lt;footer></code> element typically contains:</p>
+                <ul style="padding-left: 5%;">
+                    <li>authorship information</li>
+                    <li>copyright information</li>
+                    <li>contact information</li>
+                    <li>sitemap</li>
+                    <li>back to top links</li>
+                    <li>related documents</li>
+                </ul>
+                <p>You can have several &lt;footer> elements in one document.</p>
+                <h3>Example</h3>
+          <p>A footer section in a document:
+            <pre class="example">
+              &lt;footer>
+              &lt;p>Author: Hege Refsnes&lt;/p>
+ &lt;p>&lt;a href="mailto:hege@example.com">hege@example.com&lt;/a>&lt;/p>
+              &lt;/footer>
+          </pre>
+          </p><br>
+          <h2>HTML &lt;nav> Element</h2> <hr> <br>
+          <p>The &lt;nav> element defines a set of navigation links.</p>
+          <p>Notice that NOT all links of a document should be inside a &lt;nav> element.
+            The &lt;nav> element is intended only for major block of navigation links.
+
+         Browsers, such as screen readers for disabled users, can use this element to
+          determine whether to omit the initial rendering of this content.</p>
+          <h3>Example</h3>
+          <p> A set of navigation links:
+            <pre class="example">
+                &lt;nav>
+                    &lt;a href="/html/">HTML&lt;/a> |
+                    &lt;a href="/css/">CSS&lt;/a> |
+                    &lt;a href="/js/">JavaScript&lt;/a> |
+                    &lt;a href="/jquery/">jQuery&lt;/a>
+                  &lt;/nav>
+          </pre>
+          </p><br>
+
+                        <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="#"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="#"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

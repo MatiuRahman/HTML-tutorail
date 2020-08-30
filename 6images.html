@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+          <a class="properites_part" href="block-inline-iframe.html">
+            <li>HTML Block & Inline & Iframes</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <h2>HTML Images</h2><br>
+        <img src="https://specials-images.forbesimg.com/imageserve/5ed424a52259c9000769e94c/960x0.jpg?cropX1=120&cropX2=1267&cropY1=96&cropY2=668" alt="image" width="100%">
+        <p>Images can improve the design and the appearance of a web page.</p>
+        <p><pre class="example">
+            
+            &lt;img src="img_girl.jpg" alt="Girl in a sweater">
+        </pre></p><br>
+        <h3>HTML Images Syntax</h3>
+        <p>The HTML <code>&lt;img></code> tag is used to embed an image in a web page.</p>
+        <p>Images are not technically inserted into a web page; images are linked to web pages. The <code>&lt;img></code> tag creates a holding space for the referenced image.</p>
+        <p>The <code>&lt;img></code> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+        <p>The <code>&lt;img></code> tag has two required attributes:</p>
+        <ul style="padding-left: 25px;">
+            <li>src - Specifies the path to the image</li>
+            <li>alt - Specifies an alternate text for the image</li>
+        </ul>
+        <h4>Syntax</h4>
+        <p><pre class="example">
+            
+            &lt;img src="url" alt="alternatetext">
+        </pre></p><br>
+        <h3>The src Attribute</h3>
+        <p>The required <code>alt</code> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+        <p>The value of the <code>alt</code> attribute should describe the image:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;img src="img_chania.jpg" alt="Flowers in Chania">
+        </pre></p><br>
+        <h3>Image Size - Width and Height</h3>
+        <p>You can use the <code>style</code> attribute to specify the width and height of an image.</p>
+        <h4>Example</h4>
+        <p><pre class="example" style="font-size: 14px;">
+            
+      &lt;img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+        </pre></p><br>
+        <p>Alternatively, you can use the <code>width</code> and <code>height</code> attributes:</p>
+        <h4>Example</h4>
+        <p><pre class="example"style="font-size: 14px;">
+            
+      &lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+        </pre></p><br>
+        <h3>Animated Images</h3>
+        <p>HTML allows animated GIFs:</p>
+        <h4>Example</h4>
+        <p><pre class="example"style="font-size: 14px;">
+            
+        &lt;img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+        </pre></p><br>
+        <h3>Image as a Link</h3>
+        <p>To use an image as a link, put the &lt;img> tag inside the &lt;a> tag:</p>
+        <h4>Example</h4>
+        <p><pre class="example"style="font-size: 14px;">
+            
+        &lt;a href="default.asp">
+            &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+        &lt;/a>
+        </pre></p><br>
+        <h3>Image Floatinig</h3>
+        <p>Use the CSS float property to let the image float to the right or to the left of a text:</p>
+        <h4>Example</h4>
+        <p><pre class="example" style="font-size: 12px;">
+            
+      &lt;p>&lt;img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+      The image will float to the right of the text.&lt;/p>
+            
+      &lt;p>&lt;img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+      The image will float to the left of the text.&lt;/p>
+        </pre></p><br>
+        <h3>Common Image Formats</h3>
+        <p>Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):</p>
+        <table class="table">
+            <tr>
+                <th><strong>Abbreviation</strong></th>
+                <th><strong>File Format</strong></th>
+                <th><strong>File Extension</strong></th>
+            </tr>
+            <tr>
+                <td>APNG</td>
+                <td>Animated Portable Network Graphics</td>
+                <td>.apng</td>
+            </tr>
+            <tr>
+                <td>GIF</td>
+                <td>Graphics Interchange Format</td>
+                <td>.gif</td>
+            </tr>
+            <tr>
+                <td>ICO</td>
+                <td>Microsoft Icon</td>
+                <td>.ico, .cur</td>
+            </tr>
+            <tr>
+                <td>JPEG</td>
+                <td>Joint Photographic Expert Group image</td>
+                <td>.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+            </tr>
+            <tr>
+                <td>PNG</td>
+                <td>Portable Network Graphics</td>
+                <td>.png</td>
+            </tr>
+            <tr>
+                <td>SVG</td>
+                <td>Scalable Vector Graphics</td>
+                <td>.svg</td>
+            </tr>
+        </table>
+        <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="7paragraphs.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="5Layout.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

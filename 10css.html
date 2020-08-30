@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <h2>HTML Styles - CSS</h2><br>
+        <p>CSS stands for Cascading Style Sheets.</p>
+        <p>CSS saves a lot of work. It can control the layout of multiple web pages all at once.</p>
+        <h3>What is CSS?</h3>
+        <p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.</p>
+        <p>With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors to be used, different displays for different devices and screen sizes, and much more!</p>
+        <h3>Using CSSS</h3>
+        <p>CSS can be added to HTML documents in 3 ways:</p>
+        <ul style="padding-left: 25px;">
+            <li><strong>Inline</strong> - by using the <code>style</code> attribute inside HTML elements</li>
+            <li><strong>Internal</strong> - by using a <code>&lt;style></code> element in the <code>&lt;head></code> section</li>
+            <li><strong>External</strong> - by using a <code>&lt;link></code> element to link to an external CSS file</li>
+        </ul>
+        <h3>Inline CSS</h3>
+        <p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+        <p>An inline CSS uses the <code>style</code> attribute of an HTML element.</p>
+        <p>The following example sets the text color of the <code>&lt;h1></code> element to blue, and the text color of the <code>&lt;p></code> element to red:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;h1 style="color:blue;">A Blue Heading&lt;/h1>
+
+            &lt;p style="color:red;">A red paragraph.&lt;/p>
+        </pre></p> <br>
+        <h3>Internal CSS</h3>
+        <p>An internal CSS is used to define a style for a single HTML page.</p>
+        <p>An internal CSS is defined in the <code>&lt;head></code> section of an HTML page, within a <code>&lt;style></code> element.</p>
+        <p>The following example sets the text color of ALL the <code>&lt;h1></code> elements (on that page) to blue, and the text color of ALL the <code>&lt;p></code> elements to red. In addition, the page will be displayed with a "powderblue" background color: </p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;!DOCTYPE html>
+            &lt;html>
+            &lt;head>
+            &lt;style>
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            p    {color: red;}
+            &lt;/style>
+            &lt;/head>
+            &lt;body>
+
+            &lt;h1>This is a heading</h1>
+            &lt;p>This is a paragraph.</p>
+
+            &lt;/body>
+            &lt;/html>
+        </pre></p> <br>
+        <h3>External CSS</h3>
+        <p>An external style sheet is used to define the style for many HTML pages.</p>
+        <p>To use an external style sheet, add a link to it in the <code>&lt;head></code> section of each HTML page:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;!DOCTYPE html>
+            &lt;html>
+            &lt;head>
+                &lt;link rel="stylesheet" href="style.css">
+            &lt;/head>
+            &lt;body>
+
+            &lt;h1>This is a heading</h1>
+            &lt;p>This is a paragraph.</p>
+
+            &lt;/body>
+            &lt;/html>
+        </pre></p> <br>
+        <p>The external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.</p>
+        <p>Here is how the "styles.css" file looks like:</p>
+        <h4>"styles.css":</h4>
+        <p><pre class="example">
+            
+            body {
+                background-color: powderblue;
+              }
+              h1 {
+                color: blue;
+              }
+              p {
+                color: red;
+              }
+        </pre></p> <br>
+        <h3>CSS Colors, Fonts and Sizes</h3>
+        <p>Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.</p>
+        <p>The CSS <code>color</code> property defines the text color to be used.</p>
+        <p>The CSS <code>font-family</code> property defines the font to be used.</p>
+        <p>The CSS <code>font-size</code> property defines the text size to be used.</p>
+        <h4>Example</h4>
+        <p>Use of CSS color, font-family and font-size properties:</p>
+        <p><pre class="example">
+            
+            &lt;!DOCTYPE html>
+            &lt;html>
+            &lt;head>
+            &lt;style>
+            h1 {
+                color: blue;
+                font-family: verdana;
+                font-size: 300%;
+            }
+            p {
+                color: red;
+                font-family: courier;
+                font-size: 160%;
+            }
+            &lt;/style>
+            &lt;/head>
+            &lt;body>
+
+            &lt;h1>This is a heading</h1>
+            &lt;p>This is a paragraph.</p>
+
+            &lt;/body>
+            &lt;/html>
+        </pre></p> <br>
+        <h3>CSS Border</h3>
+        <p>The CSS <code>border</code> property defines a border around an HTML element.</p>
+        <h4>Example</h4>
+        <p>Use of CSS border property: </p>
+        <p><pre class="example">
+            p {
+                border: 2px solid powderblue;
+              }
+        </pre></p><br>
+        <h3>CSS Padding</h3>
+        <p>The CSS <code>padding</code> property defines a padding (space) between the text and the border.</p>
+        <h4>Example</h4>
+        <p>Use of CSS border and padding properties: </p>
+        <p><pre class="example">
+            p {
+                border: 2px solid powderblue;
+                padding: 30px;
+              }
+        </pre></p><br>
+        <h3>CSS Margin</h3>
+        <p>The CSS <code>margin</code> property defines a margin (space) outside the border.</p>
+        <h4>Example</h4>
+        <p>Use of CSS border and margin properties: </p>
+        <p><pre class="example">
+            p {
+                border: 2px solid powderblue;
+                margin: 50px;
+              }
+        </pre></p><br>
+        <h3>Link to External CSS</h3>
+        <p>External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+        <h4>Example</h4>
+        <p>This example uses a full URL to link to a style sheet: </p>
+        <p><pre class="example">
+            &lt;link rel="stylesheet" href="https://www.iiit-bh.com/html/styles.css">
+        </pre></p><br>
+        <h4>Example</h4>
+        <p>This example links to a style sheet located in the html folder on the current web site:  </p>
+        <p><pre class="example">
+            &lt;link rel="stylesheet" href="/html/styles.css">
+        </pre></p><br>
+        <h4>Example</h4>
+        <p>This example links to a style sheet located in the same folder as the current page:  </p>
+        <p><pre class="example">
+            &lt;link rel="stylesheet" href="styles.css">
+        </pre></p><br>
+        <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="11colour.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="9block-inline.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

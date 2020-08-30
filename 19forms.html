@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="index_style.css" />
+    <link rel="stylesheet" href="code.css">
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+    <!-- Begin Wrapper -->
+    <div id="wrapper">
+        <!-- Begin Header -->
+        <div id="header">
+            <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp; &nbsp;</h1>
+            <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+        </div>
+        <!-- End Header -->
+        <!-- Begin Navigation -->
+        <div id="navigation">
+            <ul class="topnav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="2tags.html">Tutorial</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li class="right"><a href="#about">About</a></li>
+                <li class="right"><a href="#about">Blog</a></li>
+            </ul>
+        </div>
+        <!-- End Navigation -->
+        <!-- Begin Faux Columns -->
+        <div id="faux">
+            <!-- Begin Left Column -->
+            <div style="background-color: transparent;" id="leftcolumn">
+                <h3 style="text-align: center;">HTML Tutorial</h3>
+                <ul id="tutorials">
+                    <a class="properites_part" href="index.html">
+                        <li>Introduction</li>
+                      </a>
+                      <a class="properites_part" href="2tags.html">
+                        <li>HTM Tags and Elements</li>
+                      </a>
+                      <a class="properites_part" href="3.1headings.html">
+                        <li>HTML Headings</li>
+                      </a>
+                      <a class="properites_part" href="3links.html">
+                        <li>HTML Links</li>
+                      </a>
+                      <a class="properites_part" href="4lists.html">
+                        <li>HTML Lists</li>
+                      </a>
+                      <a class="properites_part" href="5Layout.html">
+                        <li>HTML Layouts</li>
+                      </a>
+                      <a class="properites_part" href="6images.html">
+                        <li>HTML Images</li>
+                      </a>
+                      <a class="properites_part" href="7paragraphs.html">
+                        <li>HTML Paragraphs</li>
+                      </a>
+                      <a class="properites_part" href="8styles.html">
+                        <li>HTML Style Guide</li>
+                      </a>
+                      <a class="properites_part" href="9block-inline.html">
+                        <li>HTML Block & Inline</li>
+                      </a>
+                      <a class="properites_part" href="10css.html">
+                        <li>HTML CSS usage</li>
+                      </a>
+                      <a class="properites_part" href="11colour.html">
+                        <li>HTML Color Design</li>
+                      </a>
+                      <a class="properites_part" href="13formatting.html">
+                        <li>HTML Formating Designs</li>
+                      </a>
+                      <a class="properites_part" href="14tables.html">
+                        <li>HTML Making tables</li>
+                      </a>
+                      <a class="properites_part" href="16Classes.html">
+                        <li>HTML Classes</li>
+                      </a>
+                      <a class="properites_part" href="18Ids.html">
+                        <li>HTML ID's</li>
+                      </a>
+                      <a class="properites_part" href="19forms.html">
+                        <li>HTML Forms</li>
+                      </a>
+                      <a class="properites_part" href="20iframes.html">
+                        <li>HTML IFrames</li>
+                      </a><a class="properites_part" href="21Semantics.html">
+                        <li>HTML Semantics</li>
+                      </a>
+                </ul>
+            </div>
+            <!-- End Left Column -->
+            <!-- Begin Right Column -->
+            <div id="rightcolumn">
+                <h2 id="exp">HTML Form</h2>
+                <p>An HTML form is used to collect user input. The user input is most often sent to a server for
+                    processing.</p>
+                <h3>Example</h3>
+                <p>
+                    <pre class="example">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"> <br>
+            <button style="padding: 8px;">submit</button>
+        </pre>
+                </p> <br>
+                <h2>The &lt;form> Element</h2>
+                <hr> <br>
+                <h3>Example</h3>
+                <p>The HTML &ltform> element is used to create an HTML form for user input:
+                    <pre class="example">
+                &lt;form>
+                    .
+                    form elements
+                    .
+                    &lt;/form>
+        </pre>
+                </p>
+                <p>The &lt;form> element is a container for different types of input elements, such as: text fields,
+                    checkboxes, radio buttons, submit buttons, etc.
+
+                    All the different form elements are covered in the next chapter: HTML Form Elements.</p>
+                <h2>The &lt;input> Element</h2>
+                <p>The HTML &lt;input> element is the most used form element.
+
+                    An &lt;input> element can be displayed in many ways, depending on the <code>type</code> attribute.
+
+                    Here are some examples:</p>
+
+                <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lt;input type="text">
+                        </td>
+                        <td>Displays a single-line text input field</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="radio"></td>
+                        <td>Displays a radio button (for selecting one of many choices)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="checkbox"></td>
+                        <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="submit"></td>
+                        <td>Displays a submit button (for submitting the form)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;input type="button"></td>
+                        <td>Displays a clickable button</td>
+                    </tr>
+                </table> <br>
+                <h2>Text Fields</h2>
+                <hr> <br>
+                <p>The <code>&lt;input type="text"></code> defines a single-line input field for text input.</p>
+                <p> A form with two text input fields:
+                    <pre class="example">
+              &lt;form>
+                &lt;label for="fname">First name:&lt;/label>&lt;br>
+                &lt;input type="text" id="fname" name="fname">&lt;br>
+                &lt;label for="lname">Last name:&lt;/label>&lt;br>
+                &lt;input type="text" id="lname" name="lname">
+              &lt;/form>
+          </pre>
+                </p><br>
+                <p>This is how it will display...</p> <br>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br> <br>
+                <p><code><strong>Note:</strong>The form itself is not visible. Also note that the default width of an
+                        input field is 20 characters.</code></p>
+                <br>
+                <h2>The &lt;label> Element</h2>
+                <hr> <br>
+                <p>Notice the use of the &lt;label> element in the example above.
+
+                    The &lt;label> tag defines a label for many form elements.
+
+                    The &lt;label> element is useful for screen-reader users, because the screen-reader will read out
+                    loud the label when the user focus on the input element.
+
+                    The &lt;label> element also help users who have difficulty clicking on very small regions (such as
+                    radio buttons or checkboxes) - because when the user clicks the text within the &lt;label> element,
+                    it toggles the radio button/checkbox.
+
+                    The for attribute of the &lt;label> tag should be equal to the id attribute of the &lt;input>
+                    element to bind them together.
+
+                </p> <br>
+                <h2>Radio Buttons</h2>
+                <hr> <br>
+                <p>The &lt;input type="radio"> defines a radio button.
+
+                    Radio buttons let a user select ONE of a limited number of choices.</p> <br>
+                <h3>Example</h3>
+                <p>
+                    <pre class="example">
+             &lt;form>
+            &lt;input type="radio" id="male" name="gender" value="male">
+             &lt;label for="male">Male&lt;/label>&lt;br>
+            &lt;input type="radio" id="female" name="gender" value="female">
+             &lt;label for="female">Female&lt/label>&ltbr>
+            &lt;input type="radio" id="other" name="gender" value="other">
+             &lt;label for="other">Other&lt;/label>
+            &lt;/form>
+                </pre>
+                </p><br>
+                <p>This is how the HTML code above will be displayed in a browser:</p>
+        <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+                <br>
+                <h2>Checkboxes</h2>
+                <hr> <br>
+                <p>
+                    The <code>&lt;input type="checkbox"></code> defines a checkbox.
+
+                    Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+                </p> <br>
+                <h3>Example</h3>
+                <p>
+                    <pre class="example">
+     &lt;form>
+     &lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+     &lt;label for="vehicle1"> I have a bike&lt;/label>&lt;br>
+     &lt;input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+     &lt;label for="vehicle2"> I have a car&lt;/label>&lt;br>
+     &lt;input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+         &lt;label for="vehicle3"> I have a boat&lt;/label>
+                &lt;/form>
+          </pre>
+                </p><br>
+                <p>This how it will look.</p>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label>
+                <br>
+                <h2>The Submit Button</h2> <hr> <br>
+                <p>
+                    The &lt;input type="submit"> defines a button for submitting the form data to a form-handler.
+
+The form-handler is typically a file on the server with a script for processing input data.
+
+The form-handler is specified in the form's <code>action</code> attribute. <br>
+<code><strong>Note: </strong> You can check the 1 example where we used submit button.Check out the example <a href="#exp">Example</a></code>
+                </p> <br>
+                <h2>The Action Attribute</h2> <hr> <br>
+                <p>
+                    The <code>action</code> attribute defines the action to be performed when the form is submitted.
+
+Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+In the example above, the form data is sent to a file called "action_page.php". This file contains a server-side script that handles the form data:
+                </p>
+                <h3>Example</h3>
+          <p>
+            <pre class="example">
+                &lt;form action="/action_page.php">
+          </pre>
+          </p><br>
+          <p>If the <code>action</code> attribute is omitted, the action is set to the current page.</p>
+                 <br>
+                <h2>The Target Attribute</h2> <hr> <br>
+                <p>
+                    The <code>target</code> attribute specifies where to display the response that is received after submitting the form.
+
+                    The <code>target</code> attribute can have one of the following values:
+                </p> <br>
+                <table>
+                    <tr>
+                        <th>value</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            _self
+                        </td>
+                        <td>The response is displayed in the same frame</td>
+                    </tr>
+                    <tr>
+                        <td>_blank</td>
+                        <td>The response is displayed in a new window or tab</td>
+                    </tr>
+                    <tr>
+                        <td>_parent</td>
+                        <td>The response is displayed in the parent frame</td>
+                    </tr>
+                    <tr>
+                        <td>_top</td>
+                        <td>The response is displayed in the full body of the window</td>
+                    </tr>
+                    <tr>
+                        <td><i>framename</i></td>
+                        <td>The response is displayed in a named iframe</td>
+                    </tr>
+                </table> <br>
+                <p>The default value is <code>_self</code> which means that the response will open i the current window.</p>
+                <br>
+                <h3>Example</h3>
+          <p> Here, the submitted result will open in a new browser tab:
+            <pre class="example">
+                &lt;form action="/action_page.php" target="_blank">
+          </pre>
+          </p><br>
+          <h2>The Method Attribute</h2> <hr> <br>
+          <p>The <code>method</code> attribute specifies the HTTP method to use used when submitting the form data.
+
+            The form-data can be sent as URL variables (with <code>method="get"</code> ) or as HTTP post transaction (with <code>method="post"</code> ).
+            
+            The default HTTP method when submitting form data is GET.   </p> <br>
+            <h3>Example</h3>
+            <p> This example uses the GET method when submitting the form data:
+              <pre class="example">
+                &lt;form action="/action_page.php" method="get">&lt;/form>
+            </pre>
+            </p><br>
+            <h3>Example</h3>
+          <p> This example uses the POST method when submitting the form data:
+            <pre class="example">
+              &lt;form action="/action_page.php" method="post">&lt;/form>
+          </pre>
+          </p><br>
+          <strong>Notes on GET:</strong>
+          <ul style="padding-left: 5%;">
+              <li>Appends the form data to the URL, in name/value pairs</li>
+              <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+              <li>The length of a URL is limited (2048 characters)</li>
+              <li>Useful for form submissions where a user wants to bookmark the result</li>
+              <li>GET is good for non-secure data, like query strings in Google</li>
+          </ul>
+          <strong>Notes on POST:</strong>
+          <ul style="padding-left: 5%;">
+              <li>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</li>
+              <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+              <li>Form submissions with POST cannot be bookmarked</li>  
+          </ul>
+                <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+                    <li style="margin-right:15px; display:inline;"><a href="20iframes.html"><button class="button"
+                                style="vertical-align:middle"><span>NEXT</span></button></a></li>
+                    <li style="margin-right:15px; display:inline; float: right;"><a href="18Ids.html"><button class="button"
+                                style="vertical-align:middle"><span>BACK</span></button></a></li>
+                </ul>
+                <div class="clear"> </div>
+            </div>
+            <!-- End Right Column -->
+            <div class="clear"> </div>
+        </div>
+        <!-- End Faux Columns -->
+        <!-- Begin Footer -->
+        <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+        </div>
+        <!-- End Footer -->
+    </div>
+    <!-- End Wrapper -->
+</body>
+
+</html>

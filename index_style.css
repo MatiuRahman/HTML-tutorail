@@ -1,0 +1,146 @@
+* { padding: 0; margin: 0; }
+
+body {
+ font-family: Verdana, Geneva, sans-serif;
+ font-size: 17px;
+}
+
+#wrapper { 
+ margin: 0 auto;
+ width: 922px;
+}
+#faux {
+ background: url(faux-1-2-col.gif);
+ margin-bottom: 5px;
+ overflow: auto; 
+ width: 100%;
+}
+#logo-img{
+    height: 100px;
+    width: 100px;
+
+}
+#header {
+ color: #333;
+ padding: 10px;
+ height: 100px;
+ margin: 10px 0px 5px 0px;
+ background:transparent;
+}
+
+#navigation {
+ color: #333;
+ padding: 10px;
+ margin: 0px 0px 5px 0px;
+ background: #c7d4a9;
+ display: block;
+}
+#leftcolumn { 
+ display: inline;
+ color: white;
+ margin:10px;
+ padding:0;
+ width: 195px;
+ float: left;
+}
+#rightcolumn { 
+ float: right;
+ color: #333;
+ margin:10px;
+ width: 683px;
+ display: inline;
+ position: relative;
+}
+#footer { 
+ width: 902px;
+ clear: both;
+ color: #333;
+ background: #c7d4a9;
+ margin: 0px 0px 10px 0px;
+ padding: 20px 20px 20px 0;
+ text-align-last: center;
+}
+.clear { clear: both; background: none; }
+
+/* NAV BAR */
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #c7cf33;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* PROPERTIES LEFT COLUMN */
+  .properites_part{
+      color: white;
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-decoration: none;
+    padding: 2px 1px 1px 16px;
+    text-align: center;
+
+  }

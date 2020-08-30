@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+        <h2>HTML Lists</h2><br>
+        <p>HTML lists allow web developers to group a set of related items in lists.</p>
+        <h4>Example</h4>
+        <p><pre class="example" style="display: flex; margin: auto;">
+            
+            <div style="padding: 25px 0px; padding-left: 30px;">
+                <p>An unordered HTML list:</p>
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </div>
+            <div style="padding: 25px 0px;padding-left: 125px;">
+                <p>An ordered HTML list:</p>
+                <ol type="1">
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ol>
+            </div>
+        </pre></p><br>
+        <h3>Unordered HTML List</h3>
+        <p>An unordered list starts with the <code>&lt;ul></code> tag. Each list item starts with the <code>&lt;li></code> tag.</p>
+        <p>The list items will be marked with bullets (small black circles) by default:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;ul>
+                &lt;li>Coffee&lt;/li>
+                &lt;li>Tea&lt;/li>
+                &lt;li>Milk&lt;/li>
+            &lt;/ul>
+        </pre></p><br>
+        <h3>Ordered HTML List</h3>
+        <p>An Ordered list starts with the <code>&lt;ol></code> tag. Each list item starts with the <code>&lt;li></code> tag.</p>
+        <p>The list items will be marked with bullets (small black circles) by default:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;ol>
+                &lt;li>Coffee&lt;/li>
+                &lt;li>Tea&lt;/li>
+                &lt;li>Milk&lt;/li>
+            &lt;/ol>
+        </pre></p><br>
+        <h3>HTML Description Lists</h3>
+        <p>HTML also supports description lists.</p>
+        <p>A description list is a list of terms, with a description of each term.</p>
+        <p>The <code>&lt;dl></code> tag defines the description list, the <code>&lt;dt></code> tag defines the term (name), and the <code>&lt;dd></code> tag describes each term:</p>
+        <h4>Example</h4>
+        <p><pre class="example">
+            
+            &lt;dl>
+                &lt;dt>Coffee&lt;/dt>
+                &lt;dd>- black hot drink&lt;/dd>
+                &lt;dt>Milk&lt;/dt>
+                &lt;dd>- white cold drink&lt;/dd>
+            &lt;/dl>
+        </pre></p><br>
+        <h3>HTML List Tags</h3>
+        <table class="table">
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>&lt;ul></td>
+                <td>Defines an unordered list</td>
+            </tr>
+            <tr>
+                <td>&lt;ol></td>
+                <td>Defines an ordered list</td>
+            </tr>
+            <tr>
+                <td>&lt;li></td>
+                <td>Defines an list item</td>
+            </tr>
+            <tr>
+                <td>&lt;dl></td>
+                <td>Defines a description list</td>
+            </tr>
+            <tr>
+                <td>&lt;dt></td>
+                <td>Defines a term in a description list</td>
+            </tr>
+            <tr>
+                <td>&lt;dd></td>
+                <td>Describes the term in a description list</td>
+            </tr>
+        </table>
+         <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="5Layout.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="3links.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tutorial</title>
+  <link rel="stylesheet" type="text/css" href="index_style.css" />`
+  <link rel="stylesheet" href="code.css">
+  <link rel="stylesheet" href="example.css">
+</head>
+
+<body>
+  <!-- Begin Wrapper -->
+  <div id="wrapper">
+    <!-- Begin Header -->
+    <div id="header">
+      <h1 style="float: right; margin-top: 20px;">LEARN HTML &nbsp;                     &nbsp;</h1> 
+      <img class="right" id="logo-img" src="logo.jpeg" alt="logo">
+    </div>
+    <!-- End Header -->
+    <!-- Begin Navigation -->
+    <div id="navigation">
+      <ul class="topnav"> 
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="2tags.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li class="right"><a href="#about">Blog</a></li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+    <!-- Begin Faux Columns -->
+    <div id="faux">
+      <!-- Begin Left Column -->
+      <div style="background-color: transparent;" id="leftcolumn"><h3 style="text-align: center;">HTML Tutorial</h3>
+        <ul id="tutorials">
+          <a class="properites_part" href="index.html">
+            <li>Introduction</li>
+          </a>
+          <a class="properites_part" href="2tags.html">
+            <li>HTM Tags and Elements</li>
+          </a>
+          <a class="properites_part" href="3.1headings.html">
+            <li>HTML Headings</li>
+          </a>
+          <a class="properites_part" href="3links.html">
+            <li>HTML Links</li>
+          </a>
+          <a class="properites_part" href="4lists.html">
+            <li>HTML Lists</li>
+          </a>
+          <a class="properites_part" href="5Layout.html">
+            <li>HTML Layouts</li>
+          </a>
+          <a class="properites_part" href="6images.html">
+            <li>HTML Images</li>
+          </a>
+          <a class="properites_part" href="7paragraphs.html">
+            <li>HTML Paragraphs</li>
+          </a>
+          <a class="properites_part" href="8styles.html">
+            <li>HTML Style Guide</li>
+          </a>
+          <a class="properites_part" href="9block-inline.html">
+            <li>HTML Block & Inline</li>
+          </a>
+          <a class="properites_part" href="10css.html">
+            <li>HTML CSS usage</li>
+          </a>
+          <a class="properites_part" href="11colour.html">
+            <li>HTML Color Design</li>
+          </a>
+          <a class="properites_part" href="13formatting.html">
+            <li>HTML Formating Designs</li>
+          </a>
+          <a class="properites_part" href="14tables.html">
+            <li>HTML Making tables</li>
+          </a>
+          <a class="properites_part" href="16Classes.html">
+            <li>HTML Classes</li>
+          </a>
+          <a class="properites_part" href="18Ids.html">
+            <li>HTML ID's</li>
+          </a>
+          <a class="properites_part" href="19forms.html">
+            <li>HTML Forms</li>
+          </a>
+          <a class="properites_part" href="20iframes.html">
+            <li>HTML IFrames</li>
+          </a><a class="properites_part" href="21Semantics.html">
+            <li>HTML Semantics</li>
+          </a>
+        </ul>
+      </div>
+      <!-- End Left Column -->
+      <!-- Begin Right Column -->
+      <div id="rightcolumn">
+          <h2>HTML Attributes</h2>
+          <br>
+          <p>HTML attributes provide additional information about HTML elements.</p>
+          <br>
+          <h3>HTML Attributes</h3><br>
+          <ul style="padding-left: 20px;">
+              <li>All HTML elements can have attributes</li>
+              <li>Attributes provide additional information about elements</li>
+              <li>Attributes are always specified in the start tag</li>
+              <li>Attributes usually come in name/value pairs like: name="value"</li>
+          </ul>
+          <br>
+          <h3>The href Attribute</h3>
+          <p>The <code>&lt;a></code> tag defines a hyperlink. The <code>href</code> attribute specifies the URL of the page the link goes to</p>
+          <p><pre class="example">
+            
+        &lt;a hre="https://www.iiit-bh.ac.in/">Visit IIIT Bhubaneswar&lt;/a>
+          </pre></p><br>
+          <h3>The src Attribute</h3>
+          <p>The <code>&lt;img></code> tag is used to embed an image in an HTML page. The <code>src</code> attribute specifies the path to the image to be displayed:</p>
+          <p><pre class="example">
+            
+            &lt;img src="img_girl.jpg">
+          </pre></p><br>
+          <h3>The width and height Attributes</h3>
+          <p>The &lt;img> tag should also contain the <code>width</code> and <code>height</code> attributes, 
+            which specifies the width and height of the image (in pixels):
+            </p>
+            <p><pre class="example">
+                
+                &lt;img src="img_girl.jpg" width="500" height="600">
+            </pre></p><br>
+            <h3>The alt Attribute</h3>
+            <p>The required <code>alt</code> attribute for the <code>&lt;img></code> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the <code>src</code> attribute, or if the user uses a screen reader.</p>
+          <p><pre class="example">
+
+            &lt;img src="img_girl.jpg" alt="Girl with a jacket">
+          </pre></p><br>
+          <h3>The style Attribute</h3>
+          <p>The <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+          <p>Example</p>
+          <p><pre class="example">
+            &lt;p style="color:red;">This is a red paragraph.&lt;/p>
+          </pre></p><br>
+          <h3>The lang Attribute</h3>
+          <p>You should always include the <code>lang</code> attribute inside the <code>&lt;html></code> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+          <br>
+          <p>The following example specifies English as the language:</p>
+          <p><pre class="example">
+            
+            &lt;!DOCTYPE html>
+            &lt;html lang="en">
+            &lt;body>
+            ...
+            &lt;/body>
+            &lt;/html>
+          </pre></p><br>
+          <h3>The title Attribute</h3>
+          <p>The <code>title</code> attribute defines some extra information about an element.</p>
+          <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
+          <p>Example</p>
+          <p><pre class="example">
+            
+            &lt;p title="I'm a tooltip">This is a paragraph.&lt;/p>
+          </pre></p><br>
+          
+            <br> <hr> <br>
+        <ul style="margin:0 0 15px 0; padding:0; list-style-type:none;">
+          <li style="margin-right:15px; display:inline;"><a href="16Classes.html"><button class="button" style="vertical-align:middle"><span>NEXT</span></button></a></li>
+          <li style="margin-right:15px; display:inline; float: right;"><a href="14tables.html"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a></li>
+        </ul>
+        <div class="clear"> </div>
+      </div>
+      <!-- End Right Column -->
+      <div class="clear"> </div>
+    </div>
+    <!-- End Faux Columns -->
+    <!-- Begin Footer -->
+    <div id="footer"> Powered by <strong>IIIT-Bh</strong> <br> Created by<h4>Matiurahman Waqar & Sina Vichhika</h4>
+    </div>
+    <!-- End Footer -->
+  </div>
+  <!-- End Wrapper -->
+</body>
+
+</html>
